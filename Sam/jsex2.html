@@ -18,10 +18,10 @@ function myFunction() {
   document.getElementById("demo").innerHTML = x;
   
   var userText = document.getElementById("loggedInState_userText");
-  document.getElementById("demo2").innerHTML = userText.innerText;
+  document.getElementById("demo2").innerHTML = localStorage.getItem('user_name');
   
   var databaseNameId = document.getElementById("loggedInState_databaseNameId");
-  document.getElementById("demo3").innerHTML = databaseNameId.innerText;
+  document.getElementById("demo3").innerHTML = localStorage.getItem('passwordId');
 }
 </script>
 
